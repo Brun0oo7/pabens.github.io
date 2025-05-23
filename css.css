@@ -1,0 +1,72 @@
+head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    -webkit-animation: NAME-YOUR-ANIMATION 4s infinite;  /* Safari 4+ */
+    -moz-animation: NAME-YOUR-ANIMATION 4s infinite;  /* Fx 5+ */
+    -o-animation: NAME-YOUR-ANIMATION 4s infinite;  /* Opera 12+ */
+    animation: NAME-YOUR-ANIMATION 4s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { background-color: #e50000; border: 3px solid #ff7f00; }
+  7%   { background-color: #ff7f00; border: 3px solid #ffff00; }
+  14%  { background-color: #ffff00; border: 3px solid #7fff00; }
+  21%  { background-color: #7fff00; border: 3px solid #00ff00; }
+  28%  { background-color: #00ff00; border: 3px solid #00ff7f; }
+  35%  { background-color: #00ff7f; border: 3px solid #00ffff; }
+  42%  { background-color: #00ffff; border: 3px solid #007fff; }
+  49%  { background-color: #007fff; border: 3px solid #0000ff; }
+  56%  { background-color: #0000ff; border: 3px solid #7f00ff; }
+  63%  { background-color: #7f00ff; border: 3px solid #ff00ff; }
+  70%  { background-color: #ff00ff; border: 3px solid #ff007f; }
+  77%  { background-color: #ff007f; border: 3px solid #ff4d4d; }
+  84%  { background-color: #ff4d4d; border: 3px solid #ffb84d; }
+  91%  { background-color: #ffb84d; border: 3px solid #bfff00; }
+  98%  { background-color: #bfff00; border: 3px solid #e50000; }
+  100% { background-color: #e50000; border: 3px solid #ff7f00; }
+}
+
+.pabens{
+    text-align: center;
+    top: 100%;
+    left: 50%;
+}
+
+.pabens img {
+    display: inline-block;
+    -webkit-animation:spin 7s linear infinite;
+    -moz-animation:spin 7s linear infinite;
+    animation:spin 7s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+    transform: scale(0.5);
+}
